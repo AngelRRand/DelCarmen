@@ -1,0 +1,258 @@
+.comentarios-redes{
+    display: flex;
+}
+.comentarios{
+    justify-content: center;
+    max-width: 35vw;
+}
+.conteiner-comentario{
+    display: block;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    max-height: 26vh;
+    padding: 12px;
+    margin: 18px;
+    background-color: transparent;
+    
+}
+.comentarios_title h3{
+    display: inline-flex;
+    font-size: 3rem;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+.title-redes{
+    color: var(--black);
+    text-shadow: none;
+}
+.conteiner-comentario .img-comentario{
+    width: 60px;
+    height: 60px;
+}
+.img-comentario img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.nombre-comentario h4{
+    font-weight:700;
+    position: absolute;
+    left: 65px;
+    bottom: 25%;
+    color: var(--red);
+}
+.procedencia{
+    position: absolute;
+    color: var(--black2);
+    font-weight: 900;
+    font-size: 4.1rem;
+    top: 30px;
+}
+.contenido-comentario p{
+    font-size: 0.7rem;
+    color: var(--black);
+}
+.detalles-comentario{
+    width: 95px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 70%;
+    left: 70%;
+    font-size: 0.8rem;
+}
+.dia-comentario strong{
+    color: var(--red);
+    text-align: center;
+}
+.calificacion-comentario i{
+    color: var(--red);
+    font-size: 14px;
+    
+}
+
+#facebook:hover{
+
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85,88,218,1) 0%, rgb(63, 132, 156) 100.2% );
+}
+#instagram:hover{
+    background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% );
+    
+}
+#whatsapp:hover{
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgb(55, 109, 47) 0%, rgb(32, 173, 32) 100.2% );
+}
+.conteiner-comentario:hover .contenido-comentario p {
+    color: var(--primaryprod);
+}
+.conteiner-comentario:hover .calificacion-comentario i{
+    color: var(--primaryprod);
+}
+.conteiner-comentario:hover .nombre-comentario h4 {
+    color: var(--primaryprod);
+}
+.conteiner-comentario:hover .dia-comentario strong{
+    color: var(--primaryprod);
+
+}
+
+.container-redes{
+    margin-top: 4px;
+    max-width: 65vw;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+}
+.title-redes{
+    text-align: center;
+    box-shadow: none;
+    margin-left: 100px;
+}
+.title-redes h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.main-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 30px;
+}
+
+
+.card-redes{
+    margin-left: 100px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: var(--white);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.card-redes:hover{
+    transform: translateX(50%);
+}
+.card-redes .detalles-redes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-redes .detalles-redes .contenido-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+}
+.card-redes .detalles-redes .contenido-redes span{
+    line-height: 1em;
+    text-align: center;
+    color: var(--black);
+}
+.card-redes .detalles-redes .contenido-redes h4{
+    font-weight: 600;
+}
+.section-redes{
+    display: flex;
+    width: 280px;
+    padding: 30px;
+    position: relative;
+    margin-top: 50px;
+}
+.red{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100%;
+    justify-content: space-around;
+
+}
+.red .icon-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    
+}
+.red a{
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%, rgba(85,88,218,1) 0%, rgb(63, 132, 156) 100.2% );
+}
+.red:nth-child(2) a{
+    background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 10.9%, rgb(238, 64, 107) 122.3% );
+}
+.red:nth-child(3) a{
+    background-image: linear-gradient(to right top, #517d64, #56906c, #5ca272, #65b577, #6fc87b, #70d27a, #71db78, #72e575, #66e76e, #58ea68, #47ec61, #2fee5a);
+}
+.red:hover a{
+    transform: scale(1.3);
+}
+.red a{
+    font-size: 15px;
+    margin-top: 3px;
+    border: 1px var(--primaryprod) ridge;
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--primaryprod);
+    transition: 0.2s;
+}
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transform-origin: left;
+    transform-style: preserve-3d;
+    z-index: 10;
+    transition: 1s;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3)
+}
+
+.card-redes:hover .imgBox{
+    transform: rotateY(-180deg);
+}
+.imgBox .swiper-wrapper .swiper-slide .testimonialBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    
+}
+@media only screen and (max-width: 1199px){
+
+}
+
+@media only screen and (max-width: 991px){
+ 
+
+
+}
+
+@media only screen and (max-width: 767px){
+
+    
+}
+@media only screen and (max-width: 575px){
+ 
+    
+}
+
+@media only screen and (max-width: 479px){
+   
+}
+
+

@@ -1,0 +1,268 @@
+/************************************** Tienda *********************************************/
+.tienda{
+    width: 100%;
+    margin-top: 90px;
+}
+.title{
+    margin-top: 64px;
+    
+}
+.title h3{
+    font-size: 70px;
+    text-shadow: 1px 1px 1px var(--primaryprod);
+    font-weight: 700;
+}
+.tienda_sorting{
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 59px;
+    overflow: visible;
+}
+.grid_sorting_button{
+    height: 40px;
+    min-width: 102px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin: 0;
+    float: left;
+    margin-left: -1px;
+    transition: all 0.3s ease;
+}
+.grid_sorting_button:first-child{
+    margin-left: 0px;
+}
+.grid_sorting_button.active{
+    color: var(--primaryprod);
+    background: var(--red);
+    box-shadow: 1px 1px 6px var(--black);
+    transition: 0.4s;
+}
+.grid_sorting_button.active:hover{
+    color: var(--primaryprod);
+}
+.grid_sorting_button:hover{
+    color: var(--red);
+}
+/****************************************** 4.2 Tienda Grid *****************************************/
+
+.product-grid{
+    width: 100%;
+    margin-top: 57px;
+}
+.product-item{
+    width: 20%;
+    height: 380px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.product{
+    width: 100%;
+    height: 340px;
+}
+.product_image{
+    width: 100%;
+}
+.product_image img{
+    width: 100%;
+    border-radius: 8px;
+}
+.product_info{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.product_name{
+    margin-top: 27px;
+
+}
+.product_name a{
+    color: var(--black);
+    line-height: 20px;
+}
+
+.product_name:hover a{
+    color: var(--red);
+}
+.discount .product_info .product_price{
+    font-size: 14px;
+}
+.product_price{
+    font-size: 16px;
+    color: var(--red);
+    font-weight: 600;
+}
+.product_price span{
+    font-size: 12px;
+    margin-left: 10px;
+    color: var(--black);
+    text-decoration: line-through;
+}
+.product_bubble{
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    width: 50px;
+    height: 22px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+.product_bubble span{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--white);
+
+}
+.add_to_cart_button{
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.add_to_cart_button a{
+    font-size: 12px;
+    font-weight: 600;
+    
+    transition: all ease 0.3s;
+}
+
+.product-item:hover .add_to_cart_button{
+    visibility: visible;
+    opacity: 1;
+}
+.favorite{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--red);
+    width: 17px;
+    height: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
+.favorite_left{
+    left: 15px;
+
+}
+.favorite.active{
+    visibility: visible;
+    opacity: 1;
+}
+.product-item:hover .favorite{
+    visibility: visible;
+    opacity: 1;
+}
+.favorite.active::after{
+    font-family: 'fontAwesome';
+    content: '\f004';
+    color: var(--red);
+}
+.favorite::after{
+    font-family: 'fontAwesome';
+    content: '\f08a';
+}
+.favorite:hover::after{
+    text-shadow: 1px 1px 2px var(--red) ;
+}
+
+
+/*************************6. Destacados ***************************/
+.text-destacados{
+    color: var(--black);
+    margin:30px 0px;
+}
+.text-destacados i{
+    color: var(--red);
+    overflow: hidden;
+    transform: rotateX(0deg) scale(1) translate(0, 0);
+    transition: all ease-in-out 0.3s;
+    animation:0.8s girar ease-in-out infinite normal both;
+}
+.destacado-item{
+    place-items: center;
+    position: relative;
+    width: 210px;
+    margin: 6px;
+    height: 355px;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--white)
+}
+.destacado-item::before{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 35px;
+    top: 0;
+    right: 35px;
+    transition: 1.9s;background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    transform: rotate(-45deg) translate(0, -100px)
+
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card{
+    background: var(--red);  
+    background: -webkit-linear-gradient(to right, var(--white), var(--white));  
+    background: linear-gradient(to right, var(--white), var(--white)); 
+    display: grid;
+    place-items: center;
+    right: 12px;
+    width: 204px;
+    height: 347px;
+    cursor: pointer;
+}
+.destacado-item:hover::before{
+    animation: cart 1.9s ease-in-out infinite normal both;
+}
+@keyframes cart{
+    100%{
+        transform: rotate(-45deg) translate(0, 450px)
+    }
+}
+
+@keyframes girar{
+    from{
+        transform: rotateY(0deg) scale(1) translate(0, 0)
+    }
+    to{
+        transform: rotateY(180deg) scale(1) translate(0, 0)
+    }
+}
+
+
+/* ***************************** Responsive  *********************************************/
+
+
+@media only screen and (max-width: 1199px){
+
+}
+
+@media only screen and (max-width: 991px){
+ 
+
+
+}
+
+@media only screen and (max-width: 767px){
+
+    
+}
+@media only screen and (max-width: 575px){
+ 
+    
+}
+
+@media only screen and (max-width: 479px){
+   
+}

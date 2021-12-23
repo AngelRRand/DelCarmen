@@ -1,0 +1,200 @@
+/*************************************** 3. Menu ***********************************************/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.red_button{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    background-color: var(--red);
+    transition: all 0.3s ease;
+}
+.red_button a{
+    display: block;
+    color: var(--primaryprod);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+}
+
+.red_button a:hover{
+    text-shadow: 0.1px 1px 5px var(--white);
+}
+
+.shop_now_button{
+    width: 140px;
+    margin-top: 32px;
+}
+
+/********************************* 3.1 Main Navegacion ***********************************/
+
+.main_nav_container{
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 1px ridge var(--black);
+}
+.navbar{
+    width: auto;
+    height: 100px;
+    float: right;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar_menu li{
+    display: inline-block;
+}
+.navbar_menu li a{
+    display: block;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+.navbar_menu li a:hover{
+    color: var(--red);
+}
+.navbar-user{
+    margin-left: 37px;
+}
+.navbar-user li{
+    display: inline-block;
+    text-align: center;
+}
+.navbar-user li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: var(--black);
+    transition: color 0.3s ease;
+}
+.navbar-user li a:hover{
+    color: var(--red);
+}
+.checkout{
+    color: var(--red);
+}
+.checkout a{
+    border-radius: 50%;
+}
+.checkout_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -3px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--red);
+    font-size: 12px;
+    color: var(--primaryprod);
+}
+/********************************** 3.2 Logo ************************************/
+.logo-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.logo-container a{
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.logo-container a span{
+    color: var(--red);
+}
+
+/********************************** 3.1 carrito *************************************/
+
+.submenu {
+    position: relative;
+    margin-left: 10px;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:-30px;
+    top:100%;
+    z-index: 1;
+    background-color: var(--white);
+    height: auto;
+    min-width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.205);
+}
+#carrito h5{
+    margin-top: 3px;
+    font-weight: 700;
+}
+#carrito a{
+    display: block;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    color: var(--primaryprod);
+    background-color: var(--red);
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 1199px){
+    .navbar_menu li{
+        padding: 1px;
+
+    }
+    .navbar_menu li a{
+        padding: 3px;
+
+    }
+    .logo-container a{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 991px){
+    .navbar_menu{
+        display: none;
+    }
+
+    .navbar-user{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+    .logo-container a{
+        font-size: 0.9rem;
+    }
+}
+
+
+
