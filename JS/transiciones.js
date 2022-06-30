@@ -84,6 +84,12 @@ sr.reveal('.product-grid',{
 })
 
 //Promocion
-
-
+login_img
+sr.reveal('#login_img',{
+    scale: 0.5,
+    duration: 3500,
+    origin: 'top',
+    distance: '-150px',
+    reset: true
+})
 
